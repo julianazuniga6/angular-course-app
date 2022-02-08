@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
                 <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
-              </button>
+            </button>
             <a href="#" class="navbar-brand">Recipe Book</a>
         </div>
 
@@ -14,10 +14,11 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
+                <li class="dropdown" appDropdown>
                     <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li href="#">Save Data</li>
-                        <li href="#">Fetch Data</li>
+                        <li><a href="#">Save Data</a></li>
+                        <li><a href="#">Fetch Data</a></li>
                     </ul>
                 </li>
             </ul>
